@@ -4,11 +4,14 @@ using System.Linq;
 
 namespace Benchmasters.Items
 {
-    public class Inventory
+    /// <summary>
+    /// Represents container of items heaps.
+    /// </summary>
+    public class ItemBag
     {
         private readonly ItemHeap[] _itemHeaps;
 
-        public Inventory(int capacity)
+        public ItemBag(int capacity)
         {
             _itemHeaps = new ItemHeap[capacity];
             Array.Fill(_itemHeaps, default);
@@ -87,6 +90,16 @@ namespace Benchmasters.Items
         {
             var certainHeap = Get(index);
             return certainHeap.WithdrawAll();
+        }
+
+        /// <summary>
+        /// Has item heap, matching this predicate.
+        /// </summary>
+        /// <param name="predicate">Mathcing predicate</param>
+        /// <returns>true if has otherwise false</returns>
+        public bool Has(Func<ItemHeap, bool> predicate)
+        {
+            return _itemHeaps.All(predicate);
         }
     }
 }
