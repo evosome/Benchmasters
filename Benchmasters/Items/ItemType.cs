@@ -6,6 +6,7 @@ namespace Benchmasters.Items
     /// <summary>
     /// Represents item kind.
     /// </summary>
+    [GlobalClass]
     public partial class ItemType : Resource
     {
         [Export]
