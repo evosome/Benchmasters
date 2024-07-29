@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemType" load_steps=4 format=3 uid="uid://c6w2gdtgxjhxn"]
+
+[ext_resource type="Script" path="res://Items/ItemType.cs" id="1_drmpi"]
+[ext_resource type="Texture2D" uid="uid://bodx0tbyx80yx" path="res://Content/Textures/items.png" id="1_kuk8f"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_colh8"]
+atlas = ExtResource("1_kuk8f")
+region = Rect2(192, 160, 16, 16)
+
+[resource]
+script = ExtResource("1_drmpi")
+Name = "Iron Gauntlet"
+Description = "Advanced gauntlet used for advanced crafts. Can deal with hot stuff, what keeps your arms safe, while holding heated metals on."
+Rarity = 0
+Icon = SubResource("AtlasTexture_colh8")

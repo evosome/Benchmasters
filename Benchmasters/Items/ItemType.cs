@@ -12,7 +12,7 @@ namespace Benchmasters.Items
         [Export]
         public string Name { get; set; }
 
-        [Export]
+        [Export(PropertyHint.MultilineText)]
         public string Description { get; set; }
 
         [Export(PropertyHint.Enum, "Common,Uncommon,Rare,Epic,Legendary")]

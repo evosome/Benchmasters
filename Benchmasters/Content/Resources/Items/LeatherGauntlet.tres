@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemType" load_steps=4 format=3 uid="uid://de37a245s2jgt"]
+
+[ext_resource type="Texture2D" uid="uid://bodx0tbyx80yx" path="res://Content/Textures/items.png" id="1_snc7f"]
+[ext_resource type="Script" path="res://Items/ItemType.cs" id="2_7ftas"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o72rb"]
+atlas = ExtResource("1_snc7f")
+region = Rect2(176, 160, 16, 16)
+
+[resource]
+script = ExtResource("2_7ftas")
+Name = "Leather Gauntlet"
+Description = "Leather gauntlet comes with start kit. Can keep your arms safe when preparing some simple sharp minerals and wood, but still useless for working with hot stuff. Used for simple crafts."
+Rarity = 0
+Icon = SubResource("AtlasTexture_o72rb")
