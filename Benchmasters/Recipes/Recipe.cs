@@ -1,8 +1,9 @@
 ﻿
 using Godot;
 using System.Linq;
+using Benchmasters.Items;
 
-namespace Benchmasters.Items
+namespace Benchmasters.Recipes
 {
     [GlobalClass]
     public partial class Recipe : Resource
