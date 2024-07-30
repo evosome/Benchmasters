@@ -1,12 +1,12 @@
 ﻿
 namespace Benchmasters.Items
 {
-   public enum Rarity
-   {
+    public enum Rarity
+    {
         Common,
         Uncommon,
         Rare,
         Epic,
         Legendary
-   }
+    }
 }

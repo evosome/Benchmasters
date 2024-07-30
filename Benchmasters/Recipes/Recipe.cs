@@ -1,7 +1,7 @@
 ﻿
+using Benchmasters.Items;
 using Godot;
 using System.Linq;
-using Benchmasters.Items;
 
 namespace Benchmasters.Recipes
 {
